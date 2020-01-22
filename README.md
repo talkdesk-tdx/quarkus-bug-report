@@ -1,7 +1,7 @@
 # quarkus-bug-report
 Public repository to report quarkus bugs.
 
-Each branch contain a different report.
+Each branch should contain a different report. The branch name structure should be <quarkus-issue-number>-<error-thrown>. E.g. 6695-ambiguous-dependency.
 
 Preferably, the readme include a link to the reported issue.
 If that is not possible then please include a brief description of the error/bug 
