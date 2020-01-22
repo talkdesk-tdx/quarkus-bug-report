@@ -1,8 +1,12 @@
 # quarkus-bug-report
-Public repository to report quarkus bugs.
 
-Each branch contain a different report.
+Bug reported at: https://github.com/quarkusio/quarkus/issues/6695
 
-Preferably, the readme include a link to the reported issue.
-If that is not possible then please include a brief description of the error/bug 
-and how to fix it.
+Resolution time: 20h
+
+Description:
+
+Having jandex in the parent pom and a module running unit tests with surefire and integration tests with failsafe causes an ambiguous exception because jandex twice all the beans.
+
+Fix:
+Jandex should be excluded from the build if quarkus is already included.
